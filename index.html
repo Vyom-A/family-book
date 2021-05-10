@@ -1,0 +1,70 @@
+<html>
+<head><title>My family</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">S
+</head>
+<body style = "text-align: center;" class = "bg-warning">
+<marquee direction = "right" width = "50%"><h1 class = "text-primary"> Welcome back to my new webpage</h1></marquee>
+<h3>In this webpage I will tell you about my family memebrs</h3>
+<h4>I hope you will like this website and after seeing it you can submit your experince</h4>
+<h2>My family in the older days</h2>
+<img src = "Family book cover.jpg" id = "change_image">
+<br>
+<p id = "member_name">Family book</p>
+<button onclick="update();" class = "btn btn-primary" type = "button" style = "margin-top: 15px;" id = "change">Next</button>
+<script>
+var images = ["Grandfather.png",
+               "Grandmother.jpg",
+               "Father.JPG",
+               "brother_sister.jpg",
+               "ma.jpg",
+               "ocean_di.jpeg",
+               "sister_aunt.jpg",
+               "Full_family.jpg"
+            ];
+var names = ["My grandpa Madan Mohan Agarwal",
+             "My grandma Uma Devi Agarwal",
+             "Me Vyom Agarwal and my father Varun Agarwal",
+            "My younger brother and sister Aarav and Anaya Goyal",
+            "My mother Richa Agarwal",
+            "My elder sister Ocean Agarwal",
+            "My one more elder sister Tanvi Agarwal and my big aunty Jyoti Tarun Agarwal",
+            "This is my whole family picture . My all uncles and aunts whose photos I don't have are added in this picture"
+            ];
+var i = 0;
+function update() {
+if (i > 7) {
+    i = 0 ;
+}
+
+var updated_image = images[i];
+var updated_names = names[i];
+document.getElementById("change_image").src=updated_image;
+document.getElementById("member_name").innerHTML=updated_names;
+i++;
+}
+</script>
+</body>
+</html>
